@@ -187,18 +187,18 @@ async def start(b, m):
                                      file_name)
 
         msg_text ="""
-<i><u>𝗬𝗼𝘂𝗿 𝗟𝗶𝗻𝗸 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗲𝗱 !</u></i>\n
-<b>📂 Fɪʟᴇ ɴᴀᴍᴇ :</b> <i>{}</i>\n
-<b>📦 Fɪʟᴇ ꜱɪᴢᴇ :</b> <i>{}</i>\n
-<b>📥 Dᴏᴡɴʟᴏᴀᴅ :</b> <i>{}</i>\n
-<b>🚸 Nᴏᴛᴇ : Lɪɴᴋ ᴇxᴘɪʀᴇᴅ ɪɴ 24 ʜᴏᴜʀꜱ</b>\n
-<i>🍃 Bᴏᴛ Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ :</i> <b>@AvishkarPatil</b>
+<i><u>Linkin Oluşturuldu !</u></i>\n
+<b>📂 Dosya Adı :</b> <i>{}</i>\n
+<b>📦 Dosya Boyutu :</b> <i>{}</i>\n
+<b>📥 İndir :</b> <i>{}</i>\n
+<b>🚸 Not : Lɪɴᴋ ᴇxᴘɪʀᴇᴅ ɪɴ 24 ʜᴏᴜʀꜱ</b>\n
+<i>🍃 Bᴏᴛ Created Bʏ :</i> <b>@mmagneto</b>
 """
 
         await m.reply_text(
             text=msg_text.format(file_name, file_size, stream_link),
             parse_mode=ParseMode.HTML,
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Dᴏᴡɴʟᴏᴀᴅ ɴᴏᴡ 📥", url=stream_link)]])
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("İndir 📥", url=stream_link)]])
         )
 
 
