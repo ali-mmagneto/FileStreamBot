@@ -78,19 +78,19 @@ async def private_receive_handler(c: Client, m: Message):
                                     file_name)
 
         msg_text ="""
-<i><u>𝗬𝗼𝘂𝗿 𝗟𝗶𝗻𝗸 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗲𝗱 !</u></i>\n
-<b>📂 Fɪʟᴇ ɴᴀᴍᴇ :</b> <i>{}</i>\n
-<b>📦 Fɪʟᴇ ꜱɪᴢᴇ :</b> <i>{}</i>\n
-<b>📥 Dᴏᴡɴʟᴏᴀᴅ :</b> <i>{}</i>\n
-<b>🚸 Nᴏᴛᴇ : Tʜɪs ᴘᴇʀᴍᴀɴᴇɴᴛ Lɪɴᴋ, Nᴏᴛ Exᴘɪʀᴇᴅ</b>\n
-<i>© @AvishkarPatil </i>"""
+<i><u>Linkini Oluşturdum!</u></i>\n
+<b>📂 Dosya Adı :</b> <i>{}</i>\n
+<b>📦 Dosya Boyutu :</b> <i>{}</i>\n
+<b>📥 İndirme Linki :</b> <i>{}</i>\n
+<b>🚸 Not : Bu Link Süresizdir</b>\n
+<i>© @mmagneto3</i>"""
 
         await log_msg.reply_text(text=f"**RᴇQᴜᴇꜱᴛᴇᴅ ʙʏ :** [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n**Uꜱᴇʀ ɪᴅ :** `{m.from_user.id}`\n**Dᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ :** {stream_link}", disable_web_page_preview=True, parse_mode=ParseMode.MARKDOWN, quote=True)
         await m.reply_text(
             text=msg_text.format(file_name, file_size, stream_link),
             parse_mode=ParseMode.HTML, 
             disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Dᴏᴡɴʟᴏᴀᴅ ɴᴏᴡ 📥", url=stream_link)]]),
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Şimdi İndir 📥", url=stream_link)]]),
             quote=True
         )
     except FloodWait as e:
