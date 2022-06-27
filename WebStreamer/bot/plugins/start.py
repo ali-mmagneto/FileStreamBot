@@ -13,7 +13,7 @@ db = Database(Var.DATABASE_URL, Var.SESSION_NAME)
 START_TEXT = """
 <i>👋 Merhaba,</i>{}\n
 <i>Ben Telegram Dosyalarını Linke Çeviririm</i>\n
-<i>/help'e tıkla ve Nasıl kullanacağına bak</i>\n
+<i>/help'e tıkla ve Nasıl kullanacağına bak..(4 Gb Dosyaları Destekliyorum)</i>\n
 <i><u>𝗪𝗔𝗥𝗡𝗜𝗡𝗚 🚸</u></i>
 <b>🔞 Porno yollama dostum hoş değil.</b>\n\n
 <i><b>🍃 Bᴏᴛ Created Bʏ :</b>@mmagneto</i>"""
@@ -21,7 +21,7 @@ START_TEXT = """
 HELP_TEXT = """
 <i>- Bana bir dosya gönder.</i>
 <i>- İndirme linkini oluşturacağım!.</i>
-<i>- İzleme linkini oluşturmaya çalışıyorum biraz karışık gelecek güncellemede..</i>
+<i>- İzleme linkini oluşturmaya çalışıyorum biraz karışık ama indirme linkini Vlc player ve Mx playerde oynatabilirsin..</i>
 <i>- Linkler son hızda oluşturuluyor..</i>\n
 <u>🔸 𝗪𝗔𝗥𝗡𝗜𝗡𝗚 🚸</u>\n
 <b>🔞 Porno yollama dostum hoş değil.</b>\n
