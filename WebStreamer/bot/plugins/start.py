@@ -191,7 +191,7 @@ async def start(b, m):
 <b>📂 Dosya Adı :</b> <i>{}</i>\n
 <b>📦 Dosya Boyutu :</b> <i>{}</i>\n
 <b>📥 İndir :</b> <i>{}</i>\n
-<b>🚸 Not : Lɪɴᴋ ᴇxᴘɪʀᴇᴅ ɪɴ 24 ʜᴏᴜʀꜱ</b>\n
+<b>🚸 Not : Bu Link 24 Saatlik</b>\n
 <i>🍃 Bᴏᴛ Created Bʏ :</i> <b>@mmagneto</b>
 """
 
