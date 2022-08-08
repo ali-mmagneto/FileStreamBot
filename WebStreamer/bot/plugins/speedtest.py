@@ -6,10 +6,10 @@ import speedtest
 from pyrogram import Client, filters
 from pyrogram.types import Message
 
-from config import OWNER_ID
+from WebStreamer.vars import Var
 
 
-@StreamBot.on_message(filters.command("speedtest") & filters.user(OWNER_ID))
+@StreamBot.on_message(filters.command("speedtest") & filters.user(VAR.OWNER_ID))
 async def run_speedtest(c: Client, m: Message):
     hiztesti = await m.reply_text("`⚡️ Hız Testi Yapılıyor`")
     try:
