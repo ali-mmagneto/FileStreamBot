@@ -71,8 +71,10 @@ async def private_receive_handler(c: Client, m: Message):
         log_msg = await m.forward(chat_id=Var.BIN_CHANNEL)
         file_name = get_media_file_name(m)
         file_size = humanbytes(get_media_file_size(m))
-        stream_link = "https://atbanavidyobot.onrender.com/{}/{}".format(log_msg.id, file_name) if Var.ON_HEROKU or Var.NO_PORT else \
-            "http://atbanavidyobot.onrender.com/{}/{}".format(log_msg.id,
+        stream_link = "https://{}/{}/{}".format(Var.FQDN, log_msg.id, file_name) if Var.ON_HEROKU or Var.NO_PORT else \
+            "http://{}:{}/{}/{}".format(Var.FQDN,
+                                    Var.PORT,
+                                    log_msg.id,
                                     file_name)
 
         msg_text ="""
